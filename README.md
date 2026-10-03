@@ -57,6 +57,25 @@ I design and ship products where correctness has to survive the full path from a
 
 These repositories isolate difficult product boundaries into small, runnable systems. They are public reference implementations rather than production source dumps.
 
+### Architecture and runtime
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://github.com/0xENTYPER/web3-product-architecture"><img src="https://raw.githubusercontent.com/0xENTYPER/web3-product-architecture/main/assets/system-map.svg" alt="Web3 product architecture system map" /></a>
+      <h3><a href="https://github.com/0xENTYPER/web3-product-architecture">Web3 product architecture</a></h3>
+      Five architecture decisions for products that must reconcile providers, chains, payments, automation, and user-facing evidence. Includes the trade-offs behind each boundary.
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://github.com/0xENTYPER/cloudflare-web3-api-gateway"><img src="https://raw.githubusercontent.com/0xENTYPER/cloudflare-web3-api-gateway/main/assets/gateway-flow.svg" alt="Cloudflare Web3 API gateway flow" /></a>
+      <h3><a href="https://github.com/0xENTYPER/cloudflare-web3-api-gateway">Cloudflare Web3 API gateway</a></h3>
+      A runnable edge gateway with multi-provider normalization, fresh and stale KV caching, rate limiting, provenance, graceful degradation, structured logs, and tests.
+    </td>
+  </tr>
+</table>
+
+### Focused labs
+
 | Repository | Engineering question | Evidence inside |
 | --- | --- | --- |
 | [multi-chain-token-resolver](https://github.com/0xENTYPER/multi-chain-token-resolver) | How do EVM and Solana addresses become one defensible token snapshot? | Pair scoring, MCAP/FDV semantics, provenance, tests |
