@@ -70,6 +70,8 @@ These repositories isolate difficult product boundaries into small, runnable sys
       <a href="https://github.com/0xENTYPER/cloudflare-web3-api-gateway"><img src="https://raw.githubusercontent.com/0xENTYPER/cloudflare-web3-api-gateway/main/assets/gateway-flow.svg" alt="Cloudflare Web3 API gateway flow" /></a>
       <h3><a href="https://github.com/0xENTYPER/cloudflare-web3-api-gateway">Cloudflare Web3 API gateway</a></h3>
       A runnable edge gateway with multi-provider normalization, fresh and stale KV caching, rate limiting, provenance, graceful degradation, structured logs, and tests.
+      <br /><br />
+      <a href="https://gateway-demo.pnlflex.xyz"><strong>Live API</strong></a>
     </td>
   </tr>
 </table>
