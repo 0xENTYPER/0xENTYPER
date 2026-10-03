@@ -59,8 +59,8 @@ I design and ship products where correctness has to survive the full path from a
 | --- | --- | --- |
 | Live products | PNLFlex, Baggy, and ElonTracker respond publicly | [PNLFlex](https://pnlflex.xyz) · [Baggy](https://baggyapp.win) · [ElonTracker](https://elon-tracker.com) |
 | Live edge API | Cloudflare Worker with KV, rate limiting, provider fallback, request IDs, and visible cache state | [Service](https://gateway-demo.pnlflex.xyz) · [Health](https://gateway-demo.pnlflex.xyz/health) |
-| Automated delivery | Latest GitHub Actions runs are green across 14 public product, protocol, and reference repositories | [Repositories](https://github.com/0xENTYPER?tab=repositories) |
-| Highlighted test suites | 58 passing checks: PNLFlex 28, gateway 12, observability 18 | [PNLFlex](https://github.com/0xENTYPER/pnlflex#verification-strategy) · [Gateway](https://github.com/0xENTYPER/cloudflare-web3-api-gateway/actions) · [Observability](https://github.com/0xENTYPER/web3-observability-lab/actions) |
+| Automated delivery | Latest GitHub Actions runs are green across 15 public product, protocol, and reference repositories | [Repositories](https://github.com/0xENTYPER?tab=repositories) |
+| Highlighted test suites | 64 passing checks: PNLFlex 28, gateway 12, observability 18, Relay Room 6 | [PNLFlex](https://github.com/0xENTYPER/pnlflex#verification-strategy) · [Gateway](https://github.com/0xENTYPER/cloudflare-web3-api-gateway/actions) · [Observability](https://github.com/0xENTYPER/web3-observability-lab/actions) · [Relay Room](https://github.com/0xENTYPER/shared-ai-operations-room/actions) |
 | Reference network coverage | Ethereum, Base, BNB Chain, Arbitrum, Optimism, Polygon, Avalanche, and Solana | [Resolver](https://github.com/0xENTYPER/multi-chain-token-resolver#supported-networks) |
 | Operational signals | Availability, p50/p95 latency, MCAP/FDV drift, quality distribution, and cache hit/stale/miss | [Observability lab](https://github.com/0xENTYPER/web3-observability-lab) |
 
@@ -100,6 +100,7 @@ These repositories isolate difficult product boundaries into small, runnable sys
 | [stripe-web3-entitlements](https://github.com/0xENTYPER/stripe-web3-entitlements) | How does a Stripe event safely become wallet-linked access? | HMAC, replay protection, ordering, grace policy |
 | [telegram-miniapp-starter](https://github.com/0xENTYPER/telegram-miniapp-starter) | What makes a Mini App secure and useful in both private and group chats? | Real UI, initData verification, command routing |
 | [web3-observability-lab](https://github.com/0xENTYPER/web3-observability-lab) | How do provider failures and valuation disagreement become actionable evidence? | Availability, latency percentiles, MCAP/FDV drift, cache telemetry, SLO tests |
+| [shared-ai-operations-room](https://github.com/0xENTYPER/shared-ai-operations-room) | How can a team supervise one AI operation instead of forwarding private chat transcripts? | Realtime shared state, control handoff, approval gates, durable decision log |
 
 ## One connected system
 
