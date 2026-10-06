@@ -2,145 +2,77 @@
 
 # 0xENTYPER
 
-### Product engineer building crypto, fintech and AI systems.
+### Product engineer building AI, SaaS, fintech, and data-intensive products.
 
-From onchain data and protocol logic to payments, Telegram and the interface a user actually touches.
+I work across product strategy, interface design, application architecture, automation, payments, and production delivery.
 
 </div>
 
-![0xENTYPER product engineering systems](assets/product-systems.svg)
+## Selected work
+
+| Direction | Product | What it proves |
+| --- | --- | --- |
+| AI workflow | [Reply Ops](https://github.com/0xENTYPER/reply-ops) | Local-first generation, context building, ranking, approval, and browser execution |
+| AI developer tooling | [Scout Agent](https://github.com/0xENTYPER/scout-agent) | Explicit verification, bounded repair authority, isolated candidates, and repeat evidence |
+| Collaborative AI | [Relay Room](https://github.com/0xENTYPER/shared-ai-operations-room) | Realtime shared state, operator handoff, approval gates, and a durable decision log |
+| Creator fintech | [PNLFlex](https://github.com/0xENTYPER/pnlflex) | Wallet intelligence connected to a visual publishing studio |
+| Consumer trading | [Baggy](https://github.com/0xENTYPER/baggy) | Multi-chain discovery, launch, trading, and portfolio context |
+| AI analytics SaaS | [ElonTracker](https://github.com/0xENTYPER/elon-tracker) | Signals, Telegram delivery, Stripe subscriptions, and production analytics |
 
 ## What I build
 
-I design and ship products where correctness has to survive the full path from an external data source or smart contract to a clear user decision. My work combines product strategy, UX, frontend engineering, backend boundaries, data normalization, wallet flows, billing, automation, and production delivery.
+**AI products**
 
-| Focus | What that means in practice |
+Supervised workflows where models gather context, propose work, expose evidence, and stop at explicit approval boundaries.
+
+**SaaS systems**
+
+Products with authentication, billing, entitlements, usage limits, operational state, and interfaces designed for repeated work.
+
+**Fintech and data products**
+
+Systems where freshness, provider disagreement, calculation coverage, fees, and uncertainty are part of the user-facing contract.
+
+## Engineering evidence
+
+| Evidence | Result |
 | --- | --- |
-| Product engineering | Turn a fragmented workflow into one usable system |
-| Onchain data | Make provider disagreement, freshness, and uncertainty visible |
-| Protocol UX | Translate fees, slippage, signing, and lifecycle into understandable actions |
-| Payments and access | Connect Stripe billing to durable server-side entitlements |
-| AI and automation | Add signal and leverage without hiding provenance or product control |
-| Delivery | Test, deploy, observe, and iterate from real behavior |
+| Live products | [PNLFlex](https://pnlflex.xyz) · [Baggy](https://baggyapp.win) · [ElonTracker](https://elon-tracker.com) |
+| Automated verification | 70 highlighted checks across product domain logic, gateways, AI operations, and calculation engines |
+| AI execution boundaries | Local inference, approval gates, bounded repairs, cancellation, retries, and auditable state |
+| Product infrastructure | Cloudflare Workers, Stripe, Telegram, browser extensions, SQLite, PostgreSQL, and onchain providers |
+| Reference network coverage | Ethereum, Base, BNB Chain, Arbitrum, Optimism, Polygon, Avalanche, and Solana |
 
-## Shipped products
+## Focused engineering labs
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/0xENTYPER/pnlflex"><img src="https://raw.githubusercontent.com/0xENTYPER/pnlflex/main/assets/studio.png" alt="PNLFlex Creator Studio" /></a>
-      <h3><a href="https://github.com/0xENTYPER/pnlflex">PNLFlex</a></h3>
-      Wallet and PnL tracking connected to a visual studio for crypto creators. The product joins research, verification, chart composition, and publishing in one workflow.
-      <br /><br />
-      <a href="https://pnlflex.xyz"><strong>Live product</strong></a>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/0xENTYPER/baggy"><img src="https://raw.githubusercontent.com/0xENTYPER/baggy/main/assets/feed.png" alt="Baggy token discovery feed" /></a>
-      <h3><a href="https://github.com/0xENTYPER/baggy">Baggy</a></h3>
-      Non-custodial multi-chain discovery, token launch, trading, and portfolio context. Designed to reduce the distance between finding a market and acting on it.
-      <br /><br />
-      <a href="https://baggyapp.win"><strong>Live product</strong></a>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" valign="top">
-      <a href="https://github.com/0xENTYPER/elon-tracker"><img src="https://raw.githubusercontent.com/0xENTYPER/elon-tracker/main/assets/product-analytics.png" alt="ElonTracker analytics workspace" /></a>
-      <h3><a href="https://github.com/0xENTYPER/elon-tracker">ElonTracker</a></h3>
-      AI-powered analytics for post-count prediction markets: real-time activity, historical behavior, market context, signals, Telegram delivery, and Stripe-backed paid access.
-      <br /><br />
-      <a href="https://elon-tracker.com"><strong>Live product</strong></a>
-    </td>
-  </tr>
-</table>
+| Repository | Question |
+| --- | --- |
+| [stripe-web3-entitlements](https://github.com/0xENTYPER/stripe-web3-entitlements) | How does a verified billing event become durable product access? |
+| [web3-observability-lab](https://github.com/0xENTYPER/web3-observability-lab) | How do latency, availability, data drift, and cache behavior become operational evidence? |
+| [wallet-pnl-lab](https://github.com/0xENTYPER/wallet-pnl-lab) | How can realized PnL avoid inventing missing cost basis? |
+| [arbitrage-betting-engine](https://github.com/0xENTYPER/arbitrage-betting-engine) | How do cross-book odds become an executable worst-case payout? |
+| [multi-chain-token-resolver](https://github.com/0xENTYPER/multi-chain-token-resolver) | How do EVM and Solana assets become one defensible market snapshot? |
+| [bonding-curve-simulator](https://github.com/0xENTYPER/bonding-curve-simulator) | How can frontend quotes stay consistent with contract economics? |
 
-## Production evidence
+## Writing themes
 
-| Evidence | Verified result | Inspect |
-| --- | --- | --- |
-| Live products | PNLFlex, Baggy, and ElonTracker respond publicly | [PNLFlex](https://pnlflex.xyz) · [Baggy](https://baggyapp.win) · [ElonTracker](https://elon-tracker.com) |
-| Live edge API | Cloudflare Worker with KV, rate limiting, provider fallback, request IDs, and visible cache state | [Service](https://gateway-demo.pnlflex.xyz) · [Health](https://gateway-demo.pnlflex.xyz/health) |
-| Automated delivery | Latest GitHub Actions runs are green across 16 public product, protocol, and reference repositories | [Repositories](https://github.com/0xENTYPER?tab=repositories) |
-| Highlighted test suites | 70 passing checks: PNLFlex 28, gateway 12, observability 18, Relay Room 6, arbitrage engine 6 | [PNLFlex](https://github.com/0xENTYPER/pnlflex#verification-strategy) · [Gateway](https://github.com/0xENTYPER/cloudflare-web3-api-gateway/actions) · [Observability](https://github.com/0xENTYPER/web3-observability-lab/actions) · [Relay Room](https://github.com/0xENTYPER/shared-ai-operations-room/actions) · [Arbitrage engine](https://github.com/0xENTYPER/arbitrage-betting-engine/actions) |
-| Reference network coverage | Ethereum, Base, BNB Chain, Arbitrum, Optimism, Polygon, Avalanche, and Solana | [Resolver](https://github.com/0xENTYPER/multi-chain-token-resolver#supported-networks) |
-| Operational signals | Availability, p50/p95 latency, MCAP/FDV drift, quality distribution, and cache hit/stale/miss | [Observability lab](https://github.com/0xENTYPER/web3-observability-lab) |
-
-Evidence snapshot verified on October 6, 2026. Live market values and provider availability can change; the linked systems expose current state rather than freezing favorable output.
-
-## Engineering case studies
-
-These repositories isolate difficult product boundaries into small, runnable systems. They are public reference implementations rather than production source dumps.
-
-### Architecture and runtime
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/0xENTYPER/web3-product-architecture"><img src="https://raw.githubusercontent.com/0xENTYPER/web3-product-architecture/main/assets/system-map.svg" alt="Web3 product architecture system map" /></a>
-      <h3><a href="https://github.com/0xENTYPER/web3-product-architecture">Web3 product architecture</a></h3>
-      Five architecture decisions for products that must reconcile providers, chains, payments, automation, and user-facing evidence. Includes the trade-offs behind each boundary.
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/0xENTYPER/cloudflare-web3-api-gateway"><img src="https://raw.githubusercontent.com/0xENTYPER/cloudflare-web3-api-gateway/main/assets/gateway-flow.svg" alt="Cloudflare Web3 API gateway flow" /></a>
-      <h3><a href="https://github.com/0xENTYPER/cloudflare-web3-api-gateway">Cloudflare Web3 API gateway</a></h3>
-      A runnable edge gateway with multi-provider normalization, fresh and stale KV caching, rate limiting, provenance, graceful degradation, structured logs, and tests.
-      <br /><br />
-      <a href="https://gateway-demo.pnlflex.xyz"><strong>Live API</strong></a>
-    </td>
-  </tr>
-</table>
-
-### Focused labs
-
-| Repository | Engineering question | Evidence inside |
-| --- | --- | --- |
-| [multi-chain-token-resolver](https://github.com/0xENTYPER/multi-chain-token-resolver) | How do EVM and Solana addresses become one defensible token snapshot? | Pair scoring, MCAP/FDV semantics, provenance, tests |
-| [onchain-market-data-pipeline](https://github.com/0xENTYPER/onchain-market-data-pipeline) | How should an edge API behave when market providers disagree or fail? | Worker lifecycle, KV freshness, fallback matrix |
-| [wallet-pnl-lab](https://github.com/0xENTYPER/wallet-pnl-lab) | How can realized PnL avoid inventing cost basis? | FIFO lots, coverage, unknown-cost exits, UTC calendar |
-| [bonding-curve-simulator](https://github.com/0xENTYPER/bonding-curve-simulator) | How can frontend quotes remain comparable with contract economics? | Bigint math, invariant tests, slippage, graduation |
-| [stripe-web3-entitlements](https://github.com/0xENTYPER/stripe-web3-entitlements) | How does a Stripe event safely become wallet-linked access? | HMAC, replay protection, ordering, grace policy |
-| [telegram-miniapp-starter](https://github.com/0xENTYPER/telegram-miniapp-starter) | What makes a Mini App secure and useful in both private and group chats? | Real UI, initData verification, command routing |
-| [web3-observability-lab](https://github.com/0xENTYPER/web3-observability-lab) | How do provider failures and valuation disagreement become actionable evidence? | Availability, latency percentiles, MCAP/FDV drift, cache telemetry, SLO tests |
-| [shared-ai-operations-room](https://github.com/0xENTYPER/shared-ai-operations-room) | How can a team supervise one AI operation instead of forwarding private chat transcripts? | Realtime shared state, control handoff, approval gates, durable decision log |
-| [arbitrage-betting-engine](https://github.com/0xENTYPER/arbitrage-betting-engine) | How can cross-book odds become a defensible worst-case payout instead of a theoretical edge? | Freshness gates, outcome completeness, currency-step allocation, typed rejections |
-
-## One connected system
-
-```mermaid
-flowchart LR
-    P[Providers and chains] --> D[Normalize and verify]
-    D --> E[Product domain logic]
-    E --> U[Web and Telegram UI]
-    U --> W[Wallet or payment action]
-    W --> O[Receipt and observable state]
-    O --> D
-```
-
-The same principles appear across the portfolio:
-
-- uncertainty is represented instead of polished away;
-- client success screens are not treated as server authority;
-- wallet actions show their economic and network context before signing;
-- reusable domain logic stays separate from provider and interface adapters;
-- visual hierarchy follows the user's decision, not the internal data model;
-- public case studies explain boundaries without exposing private credentials or production controls.
+- AI workflows need approval states.
+- Building repair tools with bounded authority.
+- Designing interfaces that admit uncertainty.
+- When SaaS billing becomes authorization.
+- Why product demos should expose failure states.
+- Turning private production systems into useful public case studies.
 
 ## Selected stack
 
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white)
-![Stripe](https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white)
-![Telegram](https://img.shields.io/badge/Telegram-229ED9?style=flat-square&logo=telegram&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+`TypeScript` · `React` · `Cloudflare Workers` · `Node.js` · `Python` · `Playwright` · `PostgreSQL` · `SQLite` · `Stripe` · `Telegram` · `Solidity`
 
 ## How I work
 
-1. Start from the user decision and map the evidence required to support it.
-2. Make failure, freshness, fees, and confidence part of the product contract.
-3. Isolate domain logic so it can be tested without the interface or provider.
-4. Build the real workflow early, then refine it from observed friction.
+1. Start from the user decision, not the internal data model.
+2. Make uncertainty, failure, cost, and authority visible in the product.
+3. Keep domain logic testable outside providers and interfaces.
+4. Build the real workflow early and refine it from observed friction.
 5. Document why a boundary exists, not only what the code does.
 
 ---
